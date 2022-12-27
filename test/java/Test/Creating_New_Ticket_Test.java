@@ -32,7 +32,7 @@ public class Creating_New_Ticket_Test
 		driver.get("http://172.16.47.91/");
 	}
 	
-	@Test
+	@Test (priority=1)
 	public void Creating_New_Ticket() throws IOException
 	{
 		fin = new FileInputStream("D:\\Vlead Ticketing System\\Vlead_inputs2.xlsx"); wb = new XSSFWorkbook(fin); sh = wb.getSheetAt(0);
